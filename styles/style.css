@@ -1,0 +1,143 @@
+html, body {
+	height:100%;
+	margin: 0;
+    padding: 0;
+}
+
+.map-container {
+	position: relative;
+    height: 100vh;
+	overflow: hidden;
+}
+#map { 
+	height: 100%;
+}
+
+.searchContainer {
+	z-index: 1500;
+	position: absolute;
+}
+
+#menu-logo {
+	visibility: hidden;
+	height: 100px;
+	z-index: 1100;
+	position: absolute;
+    top: 20px; 
+    left: 20px; 
+	opacity: 0.7
+}
+
+#menu-logo:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#menu-logo img {
+	height:100%;
+}
+
+#sidebar {
+    width: 350px;
+    height: calc(100% - 20px);
+    z-index: 1000;
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+	margin-bottom: 10px;
+    background-color: white;
+    opacity: 90%;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.sidebar-close {
+  position: relative;
+  top: 10px;
+  left: 320px;
+  z-index: 1100;
+  text-decoration: none;
+  opacity: 0.7;
+  color:black;
+  text-shadow: 0 0 2px #FFFFFF;
+}
+
+.sidebar-close:hover {
+  text-decoration: none;
+  color:black;
+  text-shadow: 0 0 2px #FFFFFF;
+}
+
+#sidebar-content {
+    flex: 1;
+	overflow-y: hidden;
+    opacity: 100%;
+}
+
+.sidebar-header {
+	height: 200px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+
+#logo {
+	height:100%;
+}
+.housecover {
+	height:100%;
+	object-fit: contain;
+}
+
+.sidebar-info {
+	height:calc(100% - 250px);
+	overflow-y:scroll;
+	margin:10px;
+	padding:10px;
+	scrollbar-color: transparent transparent;
+}
+
+.sidebar-info, td {
+	font-size: 14px;
+}
+
+
+.sidebar-info:hover {
+	scrollbar-color: rgba(221, 207, 195, 0.7) rgba(255, 255, 255, 0.7);
+}
+
+.sidebar-info h3, th {
+	font-size: 12px;
+	color: rgba(172, 138, 108, 1);
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+
+.neighborhood.badge {
+	background-color: rgba(156, 236, 252,1);	
+}
+
+.available {
+	text-decoration:none;
+	color:white;
+}
+
+.available:hover {
+	text-decoration:none;
+	color:white;
+}
+
+table {
+	background-color: rgba(242, 242, 242, 0.3);
+	padding: 5px;
+}
+
+.sidebar-facts tr:first-child th, .sidebar-facts tr:first-child td {
+  border-top: 0;
+}
+
+@media only screen and (max-width: 500px) {
+	
+}

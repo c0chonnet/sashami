@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="geojsonautocomplete.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="map-container">
+	<div id="map"></div>
+	<div id="searchContainer"></div> 
+	<div id="menu-logo"><img src="https://opsti.ee/wp-content/uploads/2022/02/opsti_logo_72.png" onclick="openInfo()"></div>
+	<div id="sidebar">
+		<div id="sidebar-content">
+		    <a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;<a>
+			<div class="sidebar-header">
+				<img id="logo" src="https://opsti.ee/wp-content/uploads/2022/02/opsti_logo_72.png">
+			</div>
+			
+			<div class="sidebar-info">
+			<p>This project maps house paintings by artist Sashami to the city of Tartu. People can search for any house on the map and learn more about the painting. 
+			Each house on the map has a story and details about Sashami's paintings made from 2010.</p>
+			<p>Zoom to any area and click on any house to find out more details about the artwork</p>
+			<h2>About the artist</h2>
+			<p>Sashami a.k.a. Sasha Milyakina is a research fellow in Semiotics at UT and a freelance artist who captures Tartu's architectural heritage in art form. Starting from 2017, she has created calendars inspired by the city. Her clients include the University of Tartu, Tartu City Government,
+			Tartu City Museum, Setomaa museums and many more. Sasha is from Moscow and has been living in Estonia since 2013.</p>
+			<h2>About the project</h2>
+			<p>Made by Kira who is this and that. A part of the project Culture Capital known for this and that</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="geojsonautocomplete.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="main.js"></script>
+</body>
+</html>https://github.com/naomap/leaflet-fusesearch
