@@ -1,16 +1,16 @@
 const sidebarDefault = document.getElementById('sidebar-content').innerHTML
 
 function closeSidebar() {
-  document.getElementById("sidebar").style.visibility = "hidden";
-  document.getElementById("menu-logo").style.visibility = "visible";
-} 
+    document.getElementById("sidebar").style.visibility = "hidden";
+    document.getElementById("menu-logo").style.visibility = "visible";
+}
 
 function openInfo() {
-  document.getElementById("menu-logo").style.visibility = "hidden";
-  document.getElementById("sidebar").style.visibility = "visible";
-  document.getElementById('sidebar-content').innerHTML = sidebarDefault;
-    
-} 
+    document.getElementById("menu-logo").style.visibility = "hidden";
+    document.getElementById("sidebar").style.visibility = "visible";
+    document.getElementById('sidebar-content').innerHTML = sidebarDefault;
+
+}
 
 // ---- MAP SETTINGS
 
@@ -25,83 +25,85 @@ const mapOptions = {
 
 const mymap = L.map('map', mapOptions);
 L.control.zoom({
-    position: 'topright' 
+    position: 'topright'
 }).addTo(mymap);
 
 // ---- TILE
 
 
 fetch('/wp-content/plugins/sashami/config.json')
-  .then(response => response.json())
-  .then(data => {
+.then(response => response.json())
+.then(data => {
     const tileUrl = data.mapbox.tileurl;
 
     L.tileLayer(tileUrl, {
-      attribution: 'Tiles by Mapbox 🎨sashami 💻vaenaton'
+        attribution: 'Tiles by Mapbox 🎨sashami 💻vaenaton'
     }).addTo(mymap);
-  })
-  .catch(error => {
+})
+.catch(error => {
     console.error('Error fetching the JSON file:', error);
-  });
-  
+});
+
 // ---- GEOJSON
 
 
- const geojsonUrl = '/wp-content/plugins/sashami/includes/test1.geojson';
+const geojsonUrl = '/wp-content/plugins/sashami/includes/map.geojson';
 
-        var neighborhoods = [];
-        var layers = {};
+var neighborhoods = [];
+var layers = {};
 
-        fetch(geojsonUrl)
-            .then(response => response.json())
-            .then(data => {
-                data.features.forEach(feature => {
-                    if (feature.properties && feature.properties.neighborhood && !neighborhoods.includes(feature.properties.neighborhood)) {
-                        neighborhoods.push(feature.properties.neighborhood);
-                    }
+fetch(geojsonUrl)
+.then(response => response.json())
+.then(data => {
+    data.features.forEach(feature => {
+        if (feature.properties && feature.properties.neighborhood && !neighborhoods.includes(feature.properties.neighborhood)) {
+            neighborhoods.push(feature.properties.neighborhood);
+        }
+    });
+
+    neighborhoods.forEach(neighborhoodName => {
+        layers[neighborhoodName] = L.geoJson(data, {
+            filter: function (feature) {
+                return feature.properties.neighborhood === neighborhoodName;
+            },
+            pointToLayer: function (feature, latlng) {
+                var customIcon = L.icon({
+                    iconUrl: '/wp-content/uploads/houses/icon/' + feature.properties.id + '.png',
+                    iconSize: [, 100],
+                    popupAnchor: [0, 0],
                 });
+                return L.marker(latlng, {
+                    icon: customIcon
+                });
+            },
+            onEachFeature: function (feature, layer) {
+                var sidebarOwner = '';
+                var sidebarSold = '';
+                var sidebarBuilt = '';
+                var sidebarExtraInfo = '';
 
-                neighborhoods.forEach(neighborhoodName => {
-                    layers[neighborhoodName] = L.geoJson(data, {
-                        filter: function(feature) {
-                            return feature.properties.neighborhood === neighborhoodName;
-                        },
-                        pointToLayer: function (feature, latlng) {
-                            var customIcon = L.icon({
-                                iconUrl: '/wp-content/plugins/sashami/houses/icon/' + feature.properties.id + '.png',
-                                iconSize: [,100],
-                                popupAnchor: [0, 0],
-                            });
-                            return L.marker(latlng, { icon: customIcon });
-                        },
-                        onEachFeature: function (feature, layer) {
-                            var sidebarOwner = '';
-                            var sidebarSold = '';
-                            var sidebarBuilt = '';
-                            var sidebarExtraInfo = '';
-
-                            if (feature.properties.owner !== '') {
-                                sidebarOwner = `<tr>
+                if (feature.properties.owner !== null) {
+                    sidebarOwner = `<tr>
                                     <th scope="row">Owner</th>
                                     <td>${feature.properties.owner}</td>
                                 </tr>`;
-                            }
+                }
 
-                            if (feature.properties.sold == 0) {
-                                sidebarSold = `
+                if (feature.properties.sold == 0) {
+                    sidebarSold = `
                                     <a href="https://www.facebook.com/sashamiart" target="_blank" class="available badge rounded-pill bg-secondary">&#10149; For sale</a>`;
-                            }
+                }
 
-                            if (feature.properties.built !== '') {
-                                sidebarBuilt = `Built in ${feature.properties.built}.`;
-                            }
+                if (feature.properties.built !== null) {
+                    sidebarBuilt = `Built in ${feature.properties.built}.`;
+                }
 
-                            if (feature.properties.house_info !== '') {
-                                sidebarExtraInfo  = `${feature.properties.house_info}`;
-                            }
+                if (feature.properties.house_info !== null) {
+                    sidebarExtraInfo = `${feature.properties.house_info}`;
+                }
 
-                            var sidebarContent = `<a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;<a>
-                                <div class="sidebar-header"><img class="housecover" src="/wp-content/plugins/sashami/houses/full/${feature.properties.id}.jpg">
+                var sidebarContent = `<a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;<a>
+                                <div class="sidebar-header"><img class="housecover" src="/wp-content/uploads/houses/full/${feature.properties.id}.jpg">
                                 <br>              
                                 <h2>${feature.properties.address}</h2>
                                 </div>
@@ -133,18 +135,18 @@ fetch('/wp-content/plugins/sashami/config.json')
                                     </div>
                                 </div>`;
 
-                            layer.on('click', function () {
-                                document.getElementById("menu-logo").style.visibility = "hidden";
-                                document.getElementById("sidebar").style.visibility = "visible";
-                                document.getElementById('sidebar-content').innerHTML = sidebarContent;
-                            });
-                        }
-                    });
+                layer.on('click', function () {
+                    document.getElementById("menu-logo").style.visibility = "hidden";
+                    document.getElementById("sidebar").style.visibility = "visible";
+                    document.getElementById('sidebar-content').innerHTML = sidebarContent;
                 });
+            }
+        });
+    });
 
-                L.control.layers(null, layers).addTo(mymap);
-                for (var key in layers) {
-                    layers[key].addTo(mymap);
-                }
-            })
-            .catch(error => console.error('Error fetching GeoJSON data:', error));
+    L.control.layers(null, layers).addTo(mymap);
+    for (var key in layers) {
+        layers[key].addTo(mymap);
+    }
+})
+.catch(error => console.error('Error fetching GeoJSON data:', error));

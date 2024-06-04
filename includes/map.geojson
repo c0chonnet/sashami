@@ -1,0 +1,269 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.723351999999998,
+                    58.373874999999998
+                ]
+            },
+            "properties": {
+                "id": "1",
+                "address": "Võru tn, 2",
+                "year": "2020",
+                "neighborhood": "Kesklinn",
+                "materials": "markers, acrylics",
+                "width": "40",
+                "height": "30",
+                "text": "Nice house nice size nice look cool colors \r\neverything about it  is just beautiful I like it that's why I drew it",
+                "sold": "1",
+                "owner": "Private collection",
+                "house_info": null,
+                "built": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.718864,
+                    58.367812999999998
+                ]
+            },
+            "properties": {
+                "id": "2",
+                "address": "Aida tn, 7-9",
+                "year": "2020",
+                "neighborhood": "Karlova",
+                "materials": "markers, acrylics",
+                "width": "40",
+                "height": "30",
+                "text": "Nice house overall",
+                "sold": "0",
+                "owner": null,
+                "house_info": null,
+                "built": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.721495000000001,
+                    58.367061999999997
+                ]
+            },
+            "properties": {
+                "id": "3",
+                "address": "Kastani tn, 159",
+                "year": "2021",
+                "neighborhood": "Karlova",
+                "materials": "markers, acrylics",
+                "width": "40",
+                "height": "30",
+                "text": "Good building",
+                "sold": "1",
+                "owner": "Private collection",
+                "house_info": null,
+                "built": "1930"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.733833000000001,
+                    58.373294999999999
+                ]
+            },
+            "properties": {
+                "id": "4",
+                "address": "Võru tn, 110",
+                "year": "2023",
+                "neighborhood": "Karlova",
+                "materials": "markers, pencils",
+                "width": "30",
+                "height": "15",
+                "text": "Good old building",
+                "sold": "1",
+                "owner": "Private collection",
+                "house_info": null,
+                "built": "1940"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.718864,
+                    58.367812999999998
+                ]
+            },
+            "properties": {
+                "id": "5",
+                "address": "Võru tn, 55A",
+                "year": "2024",
+                "neighborhood": "Karlova",
+                "materials": "markers, pencils",
+                "width": "30",
+                "height": "15",
+                "text": "Nothing to complain about here",
+                "sold": "1",
+                "owner": "Tartu City Slaughterhouse",
+                "house_info": "Earlier was the workers' housing of the Tartu City Slaughterhouse",
+                "built": "1940"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.721495000000001,
+                    58.367061999999997
+                ]
+            },
+            "properties": {
+                "id": "6",
+                "address": "Test tn, 110",
+                "year": "2020",
+                "neighborhood": "Kesklinn",
+                "materials": "markers, pencils",
+                "width": "30",
+                "height": "15",
+                "text": "Normal and liveable",
+                "sold": "0",
+                "owner": null,
+                "house_info": null,
+                "built": "1930"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.720466999999999,
+                    58.366104
+                ]
+            },
+            "properties": {
+                "id": "7",
+                "address": "Test tn, 30",
+                "year": "2019",
+                "neighborhood": "Kesklinn",
+                "materials": "markers",
+                "width": "40",
+                "height": "30",
+                "text": "Good",
+                "sold": "0",
+                "owner": null,
+                "house_info": null,
+                "built": "1940"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.724501,
+                    58.377937000000003
+                ]
+            },
+            "properties": {
+                "id": "8",
+                "address": "Test tn, 90",
+                "year": "2018",
+                "neighborhood": "Kesklinn",
+                "materials": "markers",
+                "width": "40",
+                "height": "30",
+                "text": "I personally like this house very much",
+                "sold": "1",
+                "owner": "Tartu Museum",
+                "house_info": null,
+                "built": "1960"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.717894000000001,
+                    58.375214
+                ]
+            },
+            "properties": {
+                "id": "9",
+                "address": "Test tn, 9",
+                "year": "2020",
+                "neighborhood": "Kesklinn",
+                "materials": "markers",
+                "width": "30",
+                "height": "15",
+                "text": "Good building",
+                "sold": "0",
+                "owner": null,
+                "house_info": null,
+                "built": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.721798,
+                    58.374110999999999
+                ]
+            },
+            "properties": {
+                "id": "10",
+                "address": "Test tn, 50",
+                "year": "2021",
+                "neighborhood": "Kesklinn",
+                "materials": "markers",
+                "width": "40",
+                "height": "30",
+                "text": "Nothing to complain about here",
+                "sold": "0",
+                "owner": null,
+                "house_info": null,
+                "built": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.762080999999998,
+                    58.366753000000003
+                ]
+            },
+            "properties": {
+                "id": "11",
+                "address": "Test tn, 54",
+                "year": "2021",
+                "neighborhood": "Annelinn",
+                "materials": "markers",
+                "width": "40",
+                "height": "30",
+                "text": "Nothing to complain about here",
+                "sold": "0",
+                "owner": null,
+                "house_info": null,
+                "built": null
+            }
+        }
+    ]
+}
