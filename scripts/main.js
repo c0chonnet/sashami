@@ -69,7 +69,7 @@ fetch(geojsonUrl)
             pointToLayer: function (feature, latlng) {
                 var customIcon = L.icon({
                     iconUrl: '/wp-content/uploads/houses/icon/' + feature.properties.id + '.png',
-                    iconSize: [, 100],
+                    iconSize: [, 80],
                     popupAnchor: [0, 0],
                 });
                 return L.marker(latlng, {
@@ -94,7 +94,7 @@ fetch(geojsonUrl)
                                     <a href="https://www.facebook.com/sashamiart" target="_blank" class="available badge rounded-pill bg-secondary">&#10149; For sale</a>`;
                 }
 
-                if (feature.properties.built !== null) {
+                if (feature.properties.built !== null && feature.properties.built != 0) {
                     sidebarBuilt = `Built in ${feature.properties.built}.`;
                 }
 
