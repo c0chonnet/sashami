@@ -247,6 +247,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['mass_upload'])) {
 
 function sashami_add_house_page() {
     
+	$lon_value = '';
+	$lat_value = '';
+	$id_value = '';
 	$is_get_id = isset($_GET['id']);
 	$default_lon = (float)26.7200;
 	$default_lat = (float)58.3800;
@@ -460,8 +463,6 @@ function sashami_add_house_page() {
 		sashami_upload_image('jpg', $id, $_FILES['upload_full']);
 	}
 	
-	wp_redirect('?page=sashami_add_house&id='. $id .'');
-	exit;
 }
 	
 	
