@@ -12,13 +12,15 @@ function openInfo() {
 
 }
 
-
-function openChild(id) {
-    sidebarContent = chContent[id];
-    document.getElementById('sidebar-content').innerHTML = sidebarContent;
-    document.getElementById(`year${id}`).classList.remove('badge-light');
-    document.getElementById(`year${id}`).classList.add('badge-primary');
-}
+function openChild(id, ch_id) {
+						sidebarContent = '';
+						sidebarContent = chHouses[id][ch_id];
+						document.getElementById('sidebar-content').innerHTML = sidebarContent;
+						document.getElementById(`year${ch_id}`).classList.remove('badge-light');
+						document.getElementById(`year${ch_id}`).classList.add('badge-primary');
+					} 
+                            
+let dynamicMap = new Map();
 
 // ---- MAP SETTINGS
 
@@ -61,6 +63,7 @@ const geojsonUrl = '/wp-content/plugins/sashami/includes/map.geojson';
 
 var neighborhoods = [];
 var layers = {};
+var chHouses = {};
 
 
 fetch(geojsonUrl)
@@ -188,9 +191,11 @@ fetch(geojsonUrl)
                 });
 					
 				} else {
-                                
-                chContent = {};
-					
+           
+                var chContent = {};
+				var yearsRow = '';
+                var sidebarContent = '';
+
 					 if (feature.properties.owner !== null && feature.properties.owner !== '') {
                     sidebarOwner = `<tr>
                                     <th scope="row">Owner</th>
@@ -214,7 +219,7 @@ fetch(geojsonUrl)
                     sidebarExtraInfo = `${feature.properties.house_info}`;
                 }
 					
-					var sidebarContent = `<a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;</a>
+					sidebarContent = `<a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;</a>
 
 								
                                 <div class="sidebar-header">
@@ -233,10 +238,10 @@ fetch(geojsonUrl)
                                             <tr>
                                                 <th scope="row">Year of creation</th>
                                                 <td>`
-                    
-                    yearsRow = `<span class="badge badge-year badge-light rounded-pill" id="year${feature.properties.id}" onclick="openChild(${feature.properties.id})">${feature.properties.year}</span>`;
+                  
+                    yearsRow = `<span class="badge badge-year badge-light rounded-pill" id="year${feature.properties.id}" onclick="openChild(${feature.properties.id},${feature.properties.id})">${feature.properties.year}</span>`;
                     feature.properties.children.forEach(child => {
-                        yearsRow += `<span class="badge badge-year badge-light rounded-pill" id="year${child.id}" onclick="openChild(${child.id})"">${child.year}</span>`;
+                        yearsRow += `<span class="badge badge-year badge-light rounded-pill" id="year${child.id}" onclick="openChild(${feature.properties.id},${child.id})">${child.year}</span>`;
 						});
                            
                      sidebarContent += yearsRow;         
@@ -264,9 +269,10 @@ fetch(geojsonUrl)
                 chContent[feature.properties.id] = sidebarContent;
 
 					feature.properties.children.forEach(child => {
-                    sidebarOwner = '';
-                    sidebarSold = '';
-                    altSold = '';
+                    var sidebarOwner = '';
+                    var sidebarSold = '';
+                    var altSold = '';
+                    var chSlide = '';                     
 
 				    if (child.owner !== null && child.owner !== '') {
                     sidebarOwner = `<tr>
@@ -281,7 +287,7 @@ fetch(geojsonUrl)
 					altSold = 'The artwork is available for purchase.';
                 }
 
-						var chSlide = `
+						chSlide = `
                                 <a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;</a>
 						        <div class="sidebar-header">
 								<img class="sidebar-header-pic" alt='${feature.properties.address} by Sashami. ${child.year}, ${child.materials}. ${altSold}' src="/wp-content/uploads/houses/full/${child.id}.jpg">
@@ -317,10 +323,12 @@ fetch(geojsonUrl)
 								</div></div>`;
 						 chContent[child.id] = chSlide;
 					});
+                    
+                    chHouses[feature.properties.id] = chContent;
                     layer.on('click', function () {
                     document.getElementById("menu-logo").style.visibility = "hidden";
                     document.getElementById("sidebar").style.visibility = "visible";
-                    openChild(feature.properties.id);});
+                    openChild(feature.properties.id,feature.properties.id);});
 					}
 
             }
