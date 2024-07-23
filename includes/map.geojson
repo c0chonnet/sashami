@@ -22,7 +22,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -46,7 +47,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -70,7 +72,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -94,7 +97,8 @@
                 "sold": "1",
                 "owner": "Kiivi Autokool",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -118,7 +122,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -142,7 +147,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -166,7 +172,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -190,7 +197,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -214,7 +222,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -238,7 +247,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -262,7 +272,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -286,7 +297,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -310,7 +322,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -334,7 +347,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -358,7 +372,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -382,7 +397,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -406,7 +422,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -430,7 +447,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -454,7 +472,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -478,7 +497,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -502,7 +522,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -526,7 +547,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -550,7 +572,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -574,7 +597,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -598,7 +622,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -622,7 +647,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -646,7 +672,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -670,7 +697,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -694,7 +722,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -718,7 +747,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -742,7 +772,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -766,7 +797,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -790,7 +822,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -814,7 +847,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -838,7 +872,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -862,7 +897,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -886,7 +922,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -910,7 +947,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -934,7 +972,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -958,7 +997,8 @@
                 "sold": "1",
                 "owner": "Tartu Linnamuuseum",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -982,7 +1022,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1006,7 +1047,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1030,7 +1072,8 @@
                 "sold": "1",
                 "owner": "Eesti Üliõpilaste Selts",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1054,7 +1097,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1078,7 +1122,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1102,7 +1147,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1126,7 +1172,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1150,7 +1197,8 @@
                 "sold": "1",
                 "owner": "Tartu Linnamuuseum",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1174,7 +1222,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1198,7 +1247,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1222,7 +1272,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1246,7 +1297,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1270,7 +1322,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1294,7 +1347,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1318,7 +1372,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1342,7 +1397,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1366,7 +1422,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1390,7 +1447,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1414,7 +1472,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1438,7 +1497,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1462,7 +1522,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1486,7 +1547,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1510,7 +1572,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1534,7 +1597,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1558,7 +1622,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1582,7 +1647,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1606,7 +1672,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1630,7 +1697,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1654,7 +1722,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1678,7 +1747,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1702,7 +1772,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1726,7 +1797,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1750,7 +1822,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1774,7 +1847,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1798,7 +1872,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1822,7 +1897,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1846,7 +1922,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1870,7 +1947,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1894,7 +1972,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1918,7 +1997,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1942,7 +2022,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1966,7 +2047,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -1990,7 +2072,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2014,7 +2097,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2038,7 +2122,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2062,7 +2147,8 @@
                 "sold": "1",
                 "owner": "Kastani Leiunurk",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2086,7 +2172,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2110,7 +2197,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2134,7 +2222,8 @@
                 "sold": "2",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2158,7 +2247,8 @@
                 "sold": "2",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2182,7 +2272,8 @@
                 "sold": "2",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2206,7 +2297,8 @@
                 "sold": "2",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2230,7 +2322,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2254,7 +2347,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2278,7 +2372,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2302,7 +2397,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2326,7 +2422,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2350,7 +2447,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2374,7 +2472,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2398,7 +2497,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2422,7 +2522,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2446,7 +2547,8 @@
                 "sold": "1",
                 "owner": "D\\\\\\'Albret Collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2470,7 +2572,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2494,7 +2597,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2518,7 +2622,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2542,7 +2647,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2566,7 +2672,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2590,7 +2697,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2614,7 +2722,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2638,7 +2747,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2662,7 +2772,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2686,7 +2797,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2710,7 +2822,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2734,7 +2847,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2758,7 +2872,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2782,7 +2897,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2806,7 +2922,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2830,7 +2947,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2854,7 +2972,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2878,7 +2997,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2902,7 +3022,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2926,7 +3047,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2950,7 +3072,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2974,7 +3097,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -2998,7 +3122,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3022,7 +3147,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3046,7 +3172,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3070,7 +3197,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3094,7 +3222,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3118,7 +3247,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3142,7 +3272,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3166,7 +3297,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3190,7 +3322,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3214,7 +3347,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3238,7 +3372,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3262,7 +3397,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3286,7 +3422,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3310,7 +3447,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3334,7 +3472,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3358,7 +3497,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3382,7 +3522,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3406,7 +3547,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3430,7 +3572,8 @@
                 "sold": "1",
                 "owner": "Tartu Jumalaema Uinumise Kogudus",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3454,7 +3597,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3478,7 +3622,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3502,7 +3647,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3526,7 +3672,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3550,7 +3697,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3574,7 +3722,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3598,7 +3747,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3622,7 +3772,8 @@
                 "sold": "1",
                 "owner": "Tartu Linnamuuseum",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3646,7 +3797,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3670,7 +3822,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3694,7 +3847,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": "",
-                "built": "1878"
+                "built": "1878",
+                "children": []
             }
         },
         {
@@ -3718,7 +3872,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3742,7 +3897,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3766,7 +3922,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3790,7 +3947,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3814,7 +3972,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3838,7 +3997,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3862,7 +4022,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3886,7 +4047,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3910,7 +4072,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3934,7 +4097,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3958,7 +4122,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -3982,7 +4147,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4006,7 +4172,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4030,7 +4197,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4054,7 +4222,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4078,7 +4247,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4102,7 +4272,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4126,7 +4297,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4150,7 +4322,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4174,7 +4347,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4198,7 +4372,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4222,7 +4397,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4246,7 +4422,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4270,7 +4447,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4294,7 +4472,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4318,7 +4497,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4342,7 +4522,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4366,7 +4547,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4390,7 +4572,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4414,7 +4597,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4438,7 +4622,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4462,7 +4647,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4486,7 +4672,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4510,7 +4697,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4534,7 +4722,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4558,7 +4747,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4582,7 +4772,8 @@
                 "sold": "1",
                 "owner": "EHPV Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4602,11 +4793,40 @@
                 "materials": "watercolor pencils",
                 "width": "210",
                 "height": "150",
-                "text": "",
+                "text": "Behold many paintings from different years",
                 "sold": "1",
                 "owner": "Private collection",
-                "house_info": null,
-                "built": null
+                "house_info": "This is raekoda. No need to describe it",
+                "built": "1789",
+                "children": [
+                    {
+                        "id": "326",
+                        "year": "2023",
+                        "width": "20",
+                        "height": "30",
+                        "materials": "watercolor",
+                        "sold": "1",
+                        "owner": "Tartu Museum"
+                    },
+                    {
+                        "id": "327",
+                        "year": "2020",
+                        "width": "30",
+                        "height": "40",
+                        "materials": "pencils",
+                        "sold": "0",
+                        "owner": ""
+                    },
+                    {
+                        "id": "325",
+                        "year": "2024",
+                        "width": "30",
+                        "height": "40",
+                        "materials": "pencils",
+                        "sold": "0",
+                        "owner": ""
+                    }
+                ]
             }
         },
         {
@@ -4630,7 +4850,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4654,7 +4875,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4678,7 +4900,8 @@
                 "sold": "1",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4702,7 +4925,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4726,7 +4950,8 @@
                 "sold": "1",
                 "owner": "Tartu Linnamuuseum",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4750,7 +4975,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4774,7 +5000,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4798,7 +5025,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4822,7 +5050,8 @@
                 "sold": "1",
                 "owner": "Tartu Linnamuuseum",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4846,7 +5075,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4870,7 +5100,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4894,7 +5125,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4918,7 +5150,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4942,7 +5175,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4966,7 +5200,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -4990,7 +5225,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5014,7 +5250,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5038,7 +5275,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5062,7 +5300,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5086,7 +5325,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5110,7 +5350,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5134,7 +5375,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5158,7 +5400,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5182,7 +5425,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5206,7 +5450,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5230,7 +5475,8 @@
                 "sold": "1",
                 "owner": "D\\\\\\'Albret Collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5254,7 +5500,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5278,7 +5525,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5302,7 +5550,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5326,7 +5575,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5350,7 +5600,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5374,7 +5625,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5398,7 +5650,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5422,7 +5675,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5446,7 +5700,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5470,7 +5725,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5494,7 +5750,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5518,7 +5775,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5542,7 +5800,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5566,7 +5825,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5590,7 +5850,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5614,7 +5875,8 @@
                 "sold": "1",
                 "owner": "Barlova",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5638,7 +5900,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5662,7 +5925,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5686,7 +5950,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5710,7 +5975,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5734,7 +6000,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5758,7 +6025,8 @@
                 "sold": "1",
                 "owner": "D\\\\\\'Albret Collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5782,7 +6050,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5806,7 +6075,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5830,7 +6100,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5854,7 +6125,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5878,7 +6150,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5902,7 +6175,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5926,7 +6200,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5950,7 +6225,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5974,7 +6250,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -5998,7 +6275,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6022,7 +6300,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6046,7 +6325,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6070,7 +6350,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6094,7 +6375,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6118,7 +6400,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6142,7 +6425,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6166,7 +6450,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6190,7 +6475,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6214,7 +6500,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6238,7 +6525,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6262,7 +6550,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6286,7 +6575,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6310,7 +6600,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6334,7 +6625,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6358,7 +6650,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6382,7 +6675,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6406,7 +6700,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6430,7 +6725,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6454,7 +6750,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6478,7 +6775,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6502,7 +6800,8 @@
                 "sold": "1",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6526,7 +6825,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6550,7 +6850,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6574,7 +6875,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6598,7 +6900,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6622,7 +6925,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6646,7 +6950,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6670,7 +6975,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6694,7 +7000,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6718,7 +7025,8 @@
                 "sold": "2",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6742,7 +7050,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6766,7 +7075,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6790,7 +7100,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6814,7 +7125,8 @@
                 "sold": "2",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6838,7 +7150,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6862,7 +7175,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6886,7 +7200,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6910,7 +7225,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6934,7 +7250,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6958,7 +7275,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -6982,7 +7300,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7006,7 +7325,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7030,7 +7350,8 @@
                 "sold": "1",
                 "owner": "University of Tartu",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7054,7 +7375,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7078,7 +7400,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7102,7 +7425,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7126,7 +7450,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7150,7 +7475,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7174,7 +7500,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7198,7 +7525,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7222,7 +7550,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7246,7 +7575,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7270,7 +7600,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7294,7 +7625,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7318,7 +7650,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7342,7 +7675,8 @@
                 "sold": "2",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7366,7 +7700,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7390,7 +7725,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7414,7 +7750,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7438,7 +7775,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7462,7 +7800,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7486,7 +7825,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7510,7 +7850,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7534,7 +7875,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7558,7 +7900,8 @@
                 "sold": "1",
                 "owner": "Private collection",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7582,7 +7925,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7606,7 +7950,8 @@
                 "sold": "0",
                 "owner": "",
                 "house_info": null,
-                "built": null
+                "built": null,
+                "children": []
             }
         },
         {
@@ -7629,8 +7974,9 @@
                 "text": "",
                 "sold": "1",
                 "owner": "Private collection",
-                "house_info": null,
-                "built": null
+                "house_info": "",
+                "built": "0",
+                "children": []
             }
         }
     ]

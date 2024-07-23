@@ -41,6 +41,7 @@ html, body {
         opacity: 90%;
 		color:black;
     }
+
 	
 .badge-custom.badge-primary {
         cursor: pointer;
@@ -57,18 +58,21 @@ html, body {
         font-weight:normal;
     }
 	
-	
-.print-button {
-        position: absolute;
-        bottom: 15px; 
-        right: 5px;
-        z-index: 1001;
-        padding: 5px;
-		display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+
+.badge-year.badge-primary {
+        cursor: pointer;
+        margin-bottom: 5px;
+		background-color:#9be8f8;
+        opacity: 90%;
+		color:black;
     }
 
+.badge-year.badge-light {
+	    cursor: pointer;
+        font-weight:normal;
+    }
+
+	
 
 #menu-logo {
 	visibility: hidden;
@@ -128,14 +132,17 @@ html, body {
     opacity: 100%;
 }
 
-.sidebar-header {
-	height: 250px;
+.sidebar-header-pic {
+	height: 200px;
 	width:100%;
 	object-fit:contain;
 	object-position: 50% 50%;
 	margin-bottom: 10px;
 }
 
+.sidebar-header {
+	padding: 10px;
+}
 
 #logo {
 	height:100%;
@@ -188,6 +195,8 @@ table {
 .sidebar-facts tr:first-child th, .sidebar-facts tr:first-child td {
   border-top: 0;
 }
+
+
 
 @media only screen and (max-width: 500px) {
 	

@@ -12,6 +12,14 @@ function openInfo() {
 
 }
 
+
+function openChild(id) {
+    sidebarContent = chContent[id];
+    document.getElementById('sidebar-content').innerHTML = sidebarContent;
+    document.getElementById(`year${id}`).classList.remove('badge-light');
+    document.getElementById(`year${id}`).classList.add('badge-primary');
+}
+
 // ---- MAP SETTINGS
 
 const mapOptions = {
@@ -63,6 +71,7 @@ fetch(geojsonUrl)
             neighborhoods.push(feature.properties.neighborhood);
         }
     });
+	
 
     neighborhoods.forEach(neighborhoodName => {
         layers[neighborhoodName] = L.geoJson(data, {
@@ -84,7 +93,7 @@ fetch(geojsonUrl)
 
                 var customIcon3 = L.icon({
                     iconUrl: icon_url,
-                    iconSize: [, 40]
+                    iconSize: [, 30]
                 });
 
                 var marker = L.marker(latlng, {
@@ -112,8 +121,10 @@ fetch(geojsonUrl)
                 var sidebarBuilt = '';
                 var sidebarExtraInfo = '';
                 var sidebarInfoHeader = '';
-
-                if (feature.properties.owner !== null && feature.properties.owner !== '') {
+				var altSold 	= '';
+							
+				if (feature.properties.children.length === 0) {
+					                 if (feature.properties.owner !== null && feature.properties.owner !== '') {
                     sidebarOwner = `<tr>
                                     <th scope="row">Owner</th>
                                     <td>${feature.properties.owner}</td>
@@ -123,6 +134,7 @@ fetch(geojsonUrl)
                 if (feature.properties.sold == 0) {
                     sidebarSold = `
                                     <a href="https://www.facebook.com/sashamiart" target="_blank" class="available badge rounded-pill bg-secondary">&#10149; For sale</a>`;
+					altSold = 'The artwork is available for purchase.';
                 }
 
                 if (feature.properties.built !== null && feature.properties.built != 0) {
@@ -134,14 +146,17 @@ fetch(geojsonUrl)
                     sidebarInfoHeader = '<h3>About this house</h3>';
                     sidebarExtraInfo = `${feature.properties.house_info}`;
                 }
-
-                var sidebarContent = `<a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;<a>
-                                <img class="sidebar-header" src="/wp-content/uploads/houses/full/${feature.properties.id}.jpg">
+					
+					                var sidebarContent = `<a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;</a>
+                                <div class="sidebar-header">
+								<img class="sidebar-header-pic" alt='${feature.properties.address} by Sashami. ${feature.properties.year}, ${feature.properties.materials}. ${altSold}' src="/wp-content/uploads/houses/full/${feature.properties.id}.jpg">
                                 <br>    							
                                 <h2>${feature.properties.address}</h2>
+								<span class="neighborhood badge rounded-pill">${feature.properties.neighborhood}</span>${sidebarSold}	
+								</div>
+								
                                 <div class="sidebar-info">
-                                    <span class="neighborhood badge rounded-pill">${feature.properties.neighborhood}</span>
-                                    ${sidebarSold}			
+                   
                                     <table class="sidebar-facts table table-sm">
                                         <tbody>
                                             <tr>
@@ -159,24 +174,162 @@ fetch(geojsonUrl)
                                             ${sidebarOwner}
                                         </tbody>
                                     </table>
+								
                                     <p>${feature.properties.text}</p>
                                     <div class="sidebar-extra-info">
                                         ${sidebarInfoHeader}
                                         <p>${sidebarBuilt} ${sidebarExtraInfo}</p>
-								</div>`;
-
+								</div></div>`;
+                    
                 layer.on('click', function () {
                     document.getElementById("menu-logo").style.visibility = "hidden";
                     document.getElementById("sidebar").style.visibility = "visible";
                     document.getElementById('sidebar-content').innerHTML = sidebarContent;
                 });
+					
+				} else {
+                                
+                chContent = {};
+					
+					 if (feature.properties.owner !== null && feature.properties.owner !== '') {
+                    sidebarOwner = `<tr>
+                                    <th scope="row">Owner</th>
+                                    <td>${feature.properties.owner}</td>
+                                </tr>`;
+                }
+
+                if (feature.properties.sold == 0) {
+                    sidebarSold = `
+                                    <a href="https://www.facebook.com/sashamiart" target="_blank" class="available badge rounded-pill bg-secondary">&#10149; For sale</a>`;
+					altSold = 'The artwork is available for purchase.';
+                }
+
+                if (feature.properties.built !== null && feature.properties.built != 0) {
+                    sidebarInfoHeader = '<h3>About this house</h3>';
+                    sidebarBuilt = `Built in ${feature.properties.built}.`;
+                }
+
+                if (feature.properties.house_info !== null) {
+                    sidebarInfoHeader = '<h3>About this house</h3>';
+                    sidebarExtraInfo = `${feature.properties.house_info}`;
+                }
+					
+					var sidebarContent = `<a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;</a>
+
+								
+                                <div class="sidebar-header">
+								<img class="sidebar-header-pic" alt='${feature.properties.address} by Sashami. ${feature.properties.year}, ${feature.properties.materials}. ${altSold}' src="/wp-content/uploads/houses/full/${feature.properties.id}.jpg">
+                                <br>    							
+                                <h2>${feature.properties.address}</h2>
+								<span class="neighborhood badge rounded-pill">${feature.properties.neighborhood}</span>${sidebarSold}	
+								</div>
+								
+								
+
+                                <div class="sidebar-info">
+                   
+                                    <table class="sidebar-facts table table-sm">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Year of creation</th>
+                                                <td>`
+                    
+                    yearsRow = `<span class="badge badge-year badge-light rounded-pill" id="year${feature.properties.id}" onclick="openChild(${feature.properties.id})">${feature.properties.year}</span>`;
+                    feature.properties.children.forEach(child => {
+                        yearsRow += `<span class="badge badge-year badge-light rounded-pill" id="year${child.id}" onclick="openChild(${child.id})"">${child.year}</span>`;
+						});
+                           
+                     sidebarContent += yearsRow;         
+                     sidebarContent +=   `</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Size</th>
+                                                <td>${feature.properties.width}x${feature.properties.height} mm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Materials</th>
+                                                <td>${feature.properties.materials}</td>
+                                            </tr>
+                                            ${sidebarOwner}
+                                        </tbody>
+                                    </table>
+								
+                                    <p>${feature.properties.text}</p>
+                                    <div class="sidebar-extra-info">
+                                        ${sidebarInfoHeader}
+                                        <p>${sidebarBuilt} ${sidebarExtraInfo}</p>
+								</div></div>`
+								
+				
+                chContent[feature.properties.id] = sidebarContent;
+
+					feature.properties.children.forEach(child => {
+                    sidebarOwner = '';
+                    sidebarSold = '';
+                    altSold = '';
+
+				    if (child.owner !== null && child.owner !== '') {
+                    sidebarOwner = `<tr>
+                                    <th scope="row">Owner</th>
+                                    <td>${child.owner}</td>
+                                </tr>`;
+                }
+
+                if (child.sold == 0) {
+                    sidebarSold = `
+                                    <a href="https://www.facebook.com/sashamiart" target="_blank" class="available badge rounded-pill bg-secondary">&#10149; For sale</a>`;
+					altSold = 'The artwork is available for purchase.';
+                }
+
+						var chSlide = `
+                                <a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;</a>
+						        <div class="sidebar-header">
+								<img class="sidebar-header-pic" alt='${feature.properties.address} by Sashami. ${child.year}, ${child.materials}. ${altSold}' src="/wp-content/uploads/houses/full/${child.id}.jpg">
+                                <br>    							
+                                <h2>${feature.properties.address}</h2>
+								<span class="neighborhood badge rounded-pill">${feature.properties.neighborhood}</span>${sidebarSold}	
+								</div>
+
+                                <div class="sidebar-info">
+                   
+                                    <table class="sidebar-facts table table-sm">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Year of creation</th>
+                                                <td>${yearsRow}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Size</th>
+                                                <td>${child.width}x${child.height} mm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Materials</th>
+                                                <td>${child.materials}</td>
+                                            </tr>
+                                            ${sidebarOwner}
+                                        </tbody>
+                                    </table>
+								
+                                    <p>${feature.properties.text}</p>
+                                    <div class="sidebar-extra-info">
+                                        ${sidebarInfoHeader}
+                                        <p>${sidebarBuilt} ${sidebarExtraInfo}</p>
+								</div></div>`;
+						 chContent[child.id] = chSlide;
+					});
+                    layer.on('click', function () {
+                    document.getElementById("menu-logo").style.visibility = "hidden";
+                    document.getElementById("sidebar").style.visibility = "visible";
+                    openChild(feature.properties.id);});
+					}
+
             }
         });
     });
-
+  
     for (var key in layers) {
         layers[key].addTo(mymap);
-    }
+    };
 
     function toggleLayer(layerName) {
         var layer = layers[layerName];
@@ -208,7 +361,7 @@ fetch(geojsonUrl)
     $(document).ready(function() {
         initializeLayerControl();
     });
-
 })
 .catch(error => console.error('Error fetching GeoJSON data:', error));
+
 

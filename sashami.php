@@ -2,7 +2,7 @@
 /*
  * Plugin Name:       Sashami Map Admin
  * Description:       Manage the houses by artist Sashami on the map
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            c0chonnet
  * Author URI:        https://github.com/c0chonnet
  */
@@ -92,15 +92,29 @@ function sashami_admin_menu_page() {
 
 if (isset($_GET['action']) && $_GET['action'] == 'update_map') {
 	global $wpdb;
-	$result = $wpdb->get_results('SELECT * FROM sashami_houses WHERE DELETED IS NULL 
-	AND point_type=0 ORDER BY id');
-	$features = [];
-	foreach ($result as $row) {
-		if(file_exists(ABSPATH .'/wp-content/uploads/houses/full/' . $row->id . '.jpg') && 
-		file_exists(ABSPATH . '/wp-content/uploads/houses/icon/' . $row->id . '.png') &&
-		$row->lon != 0 &&
-		$row->lat != 0) {
-        $features[] = [
+	$result = $wpdb->get_results('SELECT * FROM sashami_houses AS s 
+	LEFT JOIN (SELECT id ch_id, year ch_year, width ch_width, height ch_height, materials ch_materials, sold ch_sold, 
+	owner ch_owner, parent_id ch_parent_id FROM sashami_houses WHERE parent_id IS NOT NULL AND parent_id != 0) t 
+	ON s.id = t.ch_parent_id WHERE DELETED IS null AND (parent_id IS NULL OR parent_id=0) ORDER BY id');
+	
+$features = [];
+$featureIndex = [];
+
+foreach ($result as $row) {
+    if (isset($featureIndex[$row->id])) {
+        if (!is_null($row->ch_id)) {
+            $features[$featureIndex[$row->id]]['properties']['children'][] = [
+                "id" => $row->ch_id,
+                "year" => $row->ch_year,
+                "width" => $row->ch_width,
+                "height" => $row->ch_height,
+                "materials" => $row->ch_materials,
+                "sold" => $row->ch_sold,
+                "owner" => $row->ch_owner
+            ];
+        }
+    } else {
+        $house = [
             "type" => "Feature",
             "geometry" => [
                 "type" => "Point",
@@ -109,20 +123,40 @@ if (isset($_GET['action']) && $_GET['action'] == 'update_map') {
             "properties" => [
                 "id" => $row->id,
                 "address" => $row->address,
-				"year" => $row->year,
-				"neighborhood" => $row->neighborhood,
-				"materials" => $row->materials,
-				"width" => $row->width,
-				"height" => $row->height,
-				"text" => $row->text,
-				"sold" => $row->sold,
-				"owner" => $row->owner,
-				"house_info" => $row->house_info,
-				"built" => $row->built
+                "year" => $row->year,
+                "neighborhood" => $row->neighborhood,
+                "materials" => $row->materials,
+                "width" => $row->width,
+                "height" => $row->height,
+                "text" => $row->text,
+                "sold" => $row->sold,
+                "owner" => $row->owner,
+                "house_info" => $row->house_info,
+                "built" => $row->built,
+                "children" => [] 
             ]
         ];
-		}
+
+        if (!is_null($row->ch_id)) {
+            $house['properties']['children'][] = [
+                "id" => $row->ch_id,
+                "year" => $row->ch_year,
+                "width" => $row->ch_width,
+                "height" => $row->ch_height,
+                "materials" => $row->ch_materials,
+                "sold" => $row->ch_sold,
+                "owner" => $row->ch_owner
+            ];
+        }
+
+        $features[] = $house;
+        $featureIndex[$row->id] = count($features) - 1;
     }
+}
+
+		
+
+    
 	
 	$geojson = [
     "type" => "FeatureCollection",
@@ -170,7 +204,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['mass_upload'])) {
     
 	global $wpdb;
 	$result = $wpdb->get_results('SELECT COUNT(*) count_houses FROM sashami_houses WHERE DELETED IS NULL 
-	AND point_type=0');
+	AND point_type=0 AND (parent_id =0 OR parent_id IS NULL)');
 	
 	$ids_on_map = [];
 	$json = file_get_contents(SASHAMI_MAP_ADMIN_PATH . '/includes/map.geojson');
@@ -180,7 +214,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['mass_upload'])) {
 	}
 	
     echo '<p>В базе данных '. $result[0]->count_houses . ' дома/домов, на <a href="/map" target="_blank">карте</a> отображается '. count($ids_on_map) .'. Недавно добавленные
-	дома, дома без локации и дома без медиа файлов не отображены.</p>';
+	дома, дома без локации и дома без медиа файлов не отображены. Если у дома несколько версий разных лет, отображен только "родитель".</p>';
 
 /* --- TABLE --- */
 
@@ -194,6 +228,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['mass_upload'])) {
   <thead>	
   <tr>
     <th>ID</th>
+	<th>Parent ID</th>
     <th>Last Edited</th>
     <th>Address</th>
 	<th>Lon</th>
@@ -217,6 +252,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['mass_upload'])) {
 		   '<tr>
 			<td ><a style="text-decoration:none;" href="?page=sashami_add_house&id='. $current_house .'">   '. $not_listed .'
 			<span class="dashicons dashicons-edit"></span></a>' . $current_house .'</td>
+			<td>' . $row->parent_id . '</td>
 			<td>' . $row->edited .' by '. $row->admin .'</td>
 			<td>' . $row->address . '</td>
 			<td>' . $row->lon . '</td>
@@ -273,10 +309,10 @@ function sashami_add_house_page() {
 	$id_input = $is_get_id ? '<input type="hidden" id="id" name="id" value='. $id_value .'>' : '';
 	$action_header = $is_get_id ? 'Редактировать дом' : 'Добавить дом';
 	$neighborhood_value = $is_get_id ? $result[0]->neighborhood : '';
-	$year_value = $is_get_id ? $result[0]->year : '';
+	$year_value = $is_get_id ? $result[0]->year : null;
 	$materials_value = $is_get_id ? $result[0]->materials : '';
-	$width_value = $is_get_id ? $result[0]->width : '';
-	$height_value = $is_get_id ? $result[0]->height : '';
+	$width_value = $is_get_id ? $result[0]->width : null;
+	$height_value = $is_get_id ? $result[0]->height : null;
 	$sold_value = $is_get_id ? $result[0]->sold : '';
 	$selected_0 = $sold_value == 0 ? 'selected' : '';
 	$selected_1 = $sold_value == 1 ? 'selected' : '';
@@ -284,7 +320,8 @@ function sashami_add_house_page() {
 	$owner_value = $is_get_id ? $result[0]->owner : '';
 	$text_value = $is_get_id ? $result[0]->text : '';
 	$houseinfo_value = $is_get_id ? $result[0]->house_info : '';
-	$built_value = $is_get_id ? $result[0]->built : '';
+	$built_value = $is_get_id ? $result[0]->built : null;
+	$parent_value = $is_get_id ? $result[0]->parent_id : null;
 	
 	echo'<div class="wrap">
     <h2>'. $action_header .'</h2>
@@ -363,6 +400,10 @@ function sashami_add_house_page() {
 		<label for="lat">Latitude</label><br>
         <input type="number" step="0.000000000000001" id="lat" name="lat" value="'. $lat_value .'"><br>
 		</td>
+		
+		<td>
+		<label for="parent_id">Parent</label><br>
+        <input type="number" id="parent_id" name="parent_id" value='. $parent_value .'><br> </td>
 		</tr>
 		
 		<tr><td colspan="4">';
@@ -436,7 +477,8 @@ function sashami_add_house_page() {
 		'lat' => $_REQUEST['lat'],
 		'text' => $_REQUEST['text'],
 		'house_info' => $_REQUEST['house_info'],
-		'built' => $_REQUEST['built']		
+		'built' => $_REQUEST['built'],
+        'parent_id' => $_REQUEST['parent_id']			
 		);
 		
 	if (isset($_REQUEST['id'])) {
@@ -449,6 +491,7 @@ function sashami_add_house_page() {
 	}
 	
 	else {
+		global $wpdb;
 		$wpdb->insert('sashami_houses', 
 		$values_array);
 		$id = $wpdb->insert_id;
