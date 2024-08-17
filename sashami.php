@@ -94,8 +94,8 @@ if (isset($_GET['action']) && $_GET['action'] == 'update_map') {
 	global $wpdb;
 	$result = $wpdb->get_results('SELECT * FROM sashami_houses AS s 
 	LEFT JOIN (SELECT id ch_id, year ch_year, width ch_width, height ch_height, materials ch_materials, sold ch_sold, 
-	owner ch_owner, parent_id ch_parent_id FROM sashami_houses WHERE parent_id IS NOT NULL AND parent_id != 0) t 
-	ON s.id = t.ch_parent_id WHERE DELETED IS null AND (parent_id IS NULL OR parent_id=0) ORDER BY id');
+	owner ch_owner, parent_id ch_parent_id FROM sashami_houses WHERE parent_id IS NOT NULL AND parent_id != 0 AND deleted IS null) t 
+	ON s.id = t.ch_parent_id WHERE deleted IS null AND (parent_id IS NULL OR parent_id=0) ORDER BY id');
 	
 $features = [];
 $featureIndex = [];

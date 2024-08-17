@@ -56,7 +56,7 @@ fetch('/wp-content/plugins/sashami/config.json')
     console.error('Error fetching the JSON file:', error);
 });
 
-// ---- GEOJSON
+// ---- GEOJSON (HOUSES AND THEIR CARDS)
 
 
 const geojsonUrl = '/wp-content/plugins/sashami/includes/map.geojson';
@@ -145,7 +145,7 @@ fetch(geojsonUrl)
                     sidebarBuilt = `Built in ${feature.properties.built}.`;
                 }
 
-                if (feature.properties.house_info !== null) {
+                if (feature.properties.house_info !== null && feature.properties.house_info !== '') {
                     sidebarInfoHeader = '<h3>About this house</h3>';
                     sidebarExtraInfo = `${feature.properties.house_info}`;
                 }
@@ -189,6 +189,8 @@ fetch(geojsonUrl)
                     document.getElementById("sidebar").style.visibility = "visible";
                     document.getElementById('sidebar-content').innerHTML = sidebarContent;
                 });
+				
+// ---- FOR HOUSES WITH SEVERAL DRAWINGS
 					
 				} else {
            
@@ -214,7 +216,7 @@ fetch(geojsonUrl)
                     sidebarBuilt = `Built in ${feature.properties.built}.`;
                 }
 
-                if (feature.properties.house_info !== null) {
+                if (feature.properties.house_info !== null && feature.properties.house_info !== '') {
                     sidebarInfoHeader = '<h3>About this house</h3>';
                     sidebarExtraInfo = `${feature.properties.house_info}`;
                 }
@@ -334,6 +336,9 @@ fetch(geojsonUrl)
             }
         });
     });
+	
+	
+// ---- NEIGHBORHOODS CONTROL
   
     for (var key in layers) {
         layers[key].addTo(mymap);
@@ -371,5 +376,7 @@ fetch(geojsonUrl)
     });
 })
 .catch(error => console.error('Error fetching GeoJSON data:', error));
+
+$('.leaflet-control-attribution').hide();
 
 

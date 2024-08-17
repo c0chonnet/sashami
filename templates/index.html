@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sashami Map - Interactive map of Tartu houses by Sasha Milyakina</title>
-	 <meta name="description" content="Interactive web map of Tartu houses paintings by artist Sasha Milyakina a.k.a. Sashami">
+	<title>Sashami Map - Interactive map of Tartu houses drawn by Sashami</title>
+	 <meta name="description" content="Interactive web map of houses paintings by Tartu-based urban artist Sashami">
 	 <meta name="keywords" content="Interactive web-map, Tartu art, Tartu kunst, Sashami, Estonian art, mapping Estonian art">
-	 <meta property="og:title" content="Sashami Map - Interactive map of Tartu houses by Sasha Milyakina"/>
+	 <meta property="og:title" content="Sashami Map - Interactive map of Tartu houses by Sashami, also known as Sasha Milyakina"/>
      <meta property="og:image" content="/wp-content/uploads/preview.jpg"/>
 	
 	<link rel="stylesheet" href="/wp-content/plugins/sashami/styles/style.css">
@@ -16,23 +16,35 @@
     
     <div class="map-container">
 	<div id="map"></div>
-	<div id="menu-logo"><img src="https://opsti.ee/wp-content/uploads/2022/02/opsti_logo_72.png" onclick="openInfo()"></div>
+	<div id="menu-logo"><img src="https://sashami.opsti.ee//wp-content/uploads/logo.png" onclick="openInfo()"></div>
 	<div id="sidebar" class="sidebar">
 		<div id="sidebar-content">
 		    <a href="javascript:void(0)" class="sidebar-close" onclick="closeSidebar()">&#x2715;</a>
-			<div class="sidebar-header">
-				<img id="logo" src="https://opsti.ee/wp-content/uploads/2022/02/opsti_logo_72.png">
-			</div>
+			 <img id="logo" src="https://sashami.opsti.ee//wp-content/uploads/logo.png">			
+			<div class="sidebar-info homepage-info">
+			<p>The interactive map of Tartu features over 350 house drawings made by Sashami since 2017. 
+			Zoom in on any area and click on a house to discover more about each artwork. You can also explore 
+			the paintings by city districts — select a district from the list to focus on a specific area.</p>
 			
-			<div class="sidebar-info">
-			<p>This project maps house paintings by artist Sashami to the city of Tartu. People can search for any house on the map and learn more about the painting. 
-			Each house on the map has a story and details about Sashami's paintings made from 2010.</p>
-			<p>Zoom to any area and click on any house to find out more details about the artwork</p>
 			<h2>About the artist</h2>
-			<p>Sashami a.k.a. Sasha Milyakina is a research fellow in Semiotics at UT and a freelance artist who captures Tartu's architectural heritage in art form. Starting from 2017, she has created calendars inspired by the city. Her clients include the University of Tartu, Tartu City Government,
-			Tartu City Museum, Setomaa museums and many more. Sasha is from Moscow and has been living in Estonia since 2013.</p>
+			<p>Sashami, also known as Sasha Milyakina, is a researcher in Semiotics at the University of Tartu and a freelance artist. 
+			Since 2017, she has tried to capture the fleeting essence of Tartu by drawing its houses, wood sheds, and backyards.</p>
+			
+			<p>Her work has been commissioned by Tartu 2024, A. Le Coq, Tartu City Museum, Setomaa museums, and others. 
+			Born in Moscow, Sasha has lived in Tartu since 2013.</p>
+			
 			<h2>About the project</h2>
-			<p>Made by Kira who is this and that. A part of the project Culture Capital known for this and that</p>
+			<p>This project was made possible with support from the Scholarship Programme to Support the Creative Work of Teachers, 
+			funded by the Cultural Endowment of Estonia.</p>
+			
+			<div class="social">
+			<a target="_blank" href="https://www.instagram.com/sashami_art/" title="Sashami in Instagram"><img src="https://sashami.opsti.ee//wp-content/uploads/instagram.png" alt="Sashami in Instagram"></a>
+			<a target="_blank" href="https://www.facebook.com/sashamiart/" title="Sashami in Facebook"><img src="https://sashami.opsti.ee//wp-content/uploads/facebook.png"alt="Sashami in Facebook"></a>
+			</div>
+			<a target="_blank" href="https://www.kulka.ee/" title="Cultural Endowment of Estonia"><img class="k" src="https://meedia.kulka.ee/photos/Kulka_logo_ENG_big_JPG.jpg" alt="Cultural Endowment of Estonia website"></a>
+			<p class="credits">Idea and technical implementation: <a target="_blank" href="https://vaenaton.com/about" title="Kira Harlašova">Kira Harlašova</a><br>
+			The project uses map tiles by Mapbox, map library Leaflet, and social media icons by Flaticon
+			</p>
 			</div>
 		</div>
 		

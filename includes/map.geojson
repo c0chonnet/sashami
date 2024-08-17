@@ -1175,21 +1175,21 @@
                 "built": null,
                 "children": [
                     {
-                        "id": "328",
-                        "year": "2021",
-                        "width": "30",
-                        "height": "40",
-                        "materials": "oil",
-                        "sold": "2",
-                        "owner": ""
-                    },
-                    {
                         "id": "329",
                         "year": "2022",
                         "width": "50",
                         "height": "40",
                         "materials": "acrylics",
                         "sold": "0",
+                        "owner": ""
+                    },
+                    {
+                        "id": "328",
+                        "year": "2021",
+                        "width": "30",
+                        "height": "40",
+                        "materials": "oil",
+                        "sold": "2",
                         "owner": ""
                     }
                 ]
@@ -4829,15 +4829,6 @@
                 "built": "1789",
                 "children": [
                     {
-                        "id": "325",
-                        "year": "2024",
-                        "width": "30",
-                        "height": "40",
-                        "materials": "pencils",
-                        "sold": "0",
-                        "owner": ""
-                    },
-                    {
                         "id": "326",
                         "year": "2023",
                         "width": "20",
@@ -4849,6 +4840,15 @@
                     {
                         "id": "327",
                         "year": "2020",
+                        "width": "30",
+                        "height": "40",
+                        "materials": "pencils",
+                        "sold": "0",
+                        "owner": ""
+                    },
+                    {
+                        "id": "325",
+                        "year": "2024",
                         "width": "30",
                         "height": "40",
                         "materials": "pencils",
