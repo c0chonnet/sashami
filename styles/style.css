@@ -88,11 +88,13 @@ html, body {
 
 	
 #logo {
-	max-width: 60%;
+	max-width: 40%;
 	height: auto;
 	display: block;
     margin-left: auto;
     margin-right: auto;
+	flex-shrink: 0;
+	object-fit: contain;
 }
 
 .k {
@@ -127,7 +129,7 @@ html, body {
 	position: absolute;
     top: 20px; 
     left: 20px; 
-	opacity: 0.90;
+	opacity: 93%;
 }
 
 #menu-logo:hover {
@@ -280,7 +282,7 @@ table {
 	
 	#sidebar {
     width: calc(100% - 20px);
-    max-height: calc(100% - 90px);
+    max-height: calc(100% - 110px);
     z-index: 1900;
     position: absolute;
 	top: 70px;
@@ -327,12 +329,33 @@ table {
 }
 
 .badge-custom {
-		padding: 5px!important;
+		font-size: 8px !important;
     }
 	
 .sidebar-header-pic {
-	height: 250px;
+	height: 150px;
 }
 
+#logo {
+	max-width: 30%;
+}
 
+}
+
+@media screen and (min-width: 1930px) {
+	
+  html, body {
+	font-size: 14px;
+}
+	
+  #sidebar {
+    width: 450px;
+	
+}
+
+.sidebar-close {
+
+  left: 420px;
+
+}
 }
