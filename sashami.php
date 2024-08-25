@@ -2,7 +2,8 @@
 /*
  * Plugin Name:       Sashami Map Admin
  * Description:       Manage the houses by artist Sashami on the map
- * Version:           1.1.0
+ * Version:           1.2.0
+   Requires Plugins:  leaflet-map
  * Author:            c0chonnet
  * Author URI:        https://github.com/c0chonnet
  */
@@ -14,6 +15,13 @@
 define('SASHAMI_MAP_ADMIN_PATH', plugin_dir_path(__FILE__));
 require_once(ABSPATH.'wp-admin/includes/file.php');
 include(ABSPATH . 'wp-includes/pluggable.php');
+
+/* --- GLOBAL VAR --- */
+
+$localized_var = array(
+        'mapbox' => defined('MAPBOX') ? MAPBOX : ''
+    );
+
 
 function sashami_updated($id) {
 	global $wpdb;
@@ -163,6 +171,7 @@ foreach ($result as $row) {
     "features" => $features];
 	$geojson_string = json_encode($geojson, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 	file_put_contents(SASHAMI_MAP_ADMIN_PATH . '/includes/map.geojson', $geojson_string);
+	file_put_contents(SASHAMI_MAP_ADMIN_PATH . '/includes/map.geojson.js', 'var map = ' . $geojson_string);
 	echo '<p>Карта успешно обновлена</p>
 	<a href="?page=sashami_admin_menu"><button class="button"><span class="dashicons dashicons-undo"></span> Назад к списку домов</button></a>';
 	exit;
@@ -510,8 +519,6 @@ function sashami_add_house_page() {
 	
 	
 }
-
-
 
 
 /* --- MAP PAGE --- */

@@ -3,13 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sashami Map - Interactive map of Tartu houses drawn by Sashami</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	 <meta name="description" content="Interactive web map of houses paintings by Tartu-based urban artist Sashami">
 	 <meta name="keywords" content="Interactive web-map, Tartu art, Tartu kunst, Sashami, Estonian art, mapping Estonian art">
 	 <meta property="og:title" content="Sashami Map - Interactive map of Tartu houses by Sashami, also known as Sasha Milyakina"/>
      <meta property="og:image" content="/wp-content/uploads/preview.jpg"/>
 	
 	<link rel="stylesheet" href="/wp-content/plugins/sashami/styles/style.css">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<link rel="stylesheet" href="/wp-content/plugins/sashami/styles/leaflet-search.src.css"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 <body>
@@ -42,17 +44,31 @@
 			<a target="_blank" href="https://www.facebook.com/sashamiart/" title="Sashami in Facebook"><img src="https://sashami.opsti.ee//wp-content/uploads/facebook.png"alt="Sashami in Facebook"></a>
 			</div>
 			<a target="_blank" href="https://www.kulka.ee/" title="Cultural Endowment of Estonia"><img class="k" src="https://meedia.kulka.ee/photos/Kulka_logo_ENG_big_JPG.jpg" alt="Cultural Endowment of Estonia website"></a>
-			<p class="credits">Idea and technical implementation: <a target="_blank" href="https://vaenaton.com/about" title="Kira Harlašova">Kira Harlašova</a><br>
-			The project uses map tiles by Mapbox, map library Leaflet, and social media icons by Flaticon
+			<p class="credits">Idea and technical implementation: 
+			<!--<a target="_blank" href="https://vaenaton.com/about" title="Kira Harlašova">-->
+			Kira Harlašova
+			<!--</a>-->
+			<br>
+			The project uses map tiles by Mapbox, map library Leaflet, and icons by Flaticon<br>
+			<a href="/wp-content/plugins/sashami/includes/map.geojson" target="_blank">Open data</a>
+			<a href="javascript:void(0)" onclick="privacyPolicy()">Privacy policy</a>
 			</p>
 			</div>
 		</div>
 		
 	</div>
+	<div class="cookies" id="cookies">
+	<p>This website uses cookies. <a href="javascript:void(0)" onclick="privacyPolicy()">Privacy policy</a></p>
+	<button id="concent" class="btn btn-dark" onclick="cookiesAccept()">OK</button>
+	</div>
+	<div class="search" id="search"></div>
 	<div class="control-pane" id="layer-control"></div>
 	</div>
+	<script src="/wp-content/plugins/sashami/includes/map.geojson.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/1.2.2/fuse.min.js"></script>
 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="/wp-content/plugins/sashami/scripts/leaflet-search.min.js"></script>
     <script src="/wp-content/plugins/sashami/scripts/main.js"></script>
 	
 </body>

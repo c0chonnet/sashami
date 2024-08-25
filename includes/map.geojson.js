@@ -1,4 +1,4 @@
-{
+var map = {
     "type": "FeatureCollection",
     "features": [
         {
