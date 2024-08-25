@@ -527,8 +527,10 @@ add_action('template_redirect', 'sashami_map_index');
 
 function sashami_map_index() {
 	
-	/*if (is_home() || is_front_page()) {*/
-	  if (is_page('map')) {
+	if (is_home() || is_front_page()) {
+		
+	 /* if (is_page('map')) {*/
+	 
         $sashami_index = SASHAMI_MAP_ADMIN_PATH . '/templates/index.html';
         if (file_exists($sashami_index )) {
             $html_content = file_get_contents($sashami_index );
@@ -536,7 +538,9 @@ function sashami_map_index() {
 			exit;
 }
 		} else {
-					echo '';
+					wp_redirect('/');
+                     exit;
+
         }
     }
 	
