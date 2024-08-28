@@ -16,13 +16,6 @@ define('SASHAMI_MAP_ADMIN_PATH', plugin_dir_path(__FILE__));
 require_once(ABSPATH.'wp-admin/includes/file.php');
 include(ABSPATH . 'wp-includes/pluggable.php');
 
-/* --- GLOBAL VAR --- */
-
-$localized_var = array(
-        'mapbox' => defined('MAPBOX') ? MAPBOX : ''
-    );
-
-
 function sashami_updated($id) {
 	global $wpdb;
 	global $current_user;
@@ -519,6 +512,7 @@ function sashami_add_house_page() {
 	
 	
 }
+
 
 
 /* --- MAP PAGE --- */

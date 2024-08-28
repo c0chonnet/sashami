@@ -75,7 +75,7 @@ mymap.setMaxBounds([[58.41250326804044, 26.6432176754798], [58.33454971978788, 2
 // ---- TILE
 
 
-fetch('/wp-content/plugins/sashami/config.json')
+fetch('/wp-content/plugins/sashami/config.json') //restricted on Mapbox level
 .then(response => response.json())
 .then(data => {
     const tileUrl = data.mapbox.tileurl;
@@ -409,30 +409,46 @@ $('.leaflet-control-attribution').hide();
 
 // ---- SEARCH
 
+// TODO normalize unicode characters for better search
+
 var fuse = new Fuse(map.features, {
     keys: [
         'properties.address',
         'properties.owner',
         'properties.materials',
-        'properties.text',
-        'properties.house_info'
+        'properties.text'
     ]
-}); //TODO - search by several properties
+}); 
 
-var foundIcon = L.icon({
-    iconUrl: '/wp-content/plugins/sashami/includes/location.png',
-    iconSize: [40, ]
-});
 
 var controlSearch = new L.Control.Search({
     propertyName: 'address',
     position: 'topright',
+	tooltipLimit: 20,
+	textPlaceholder:'Address, materials, owner...',
     layer: L.layerGroup(lCollection),
-    tooltipLimit: 5,
     initial: false,
     collapsed: false,
     textErr: 'Address not found',
     zoom: 18,
+	buildTip: function (text,val) {
+		var tipOwner = val.layer.feature.properties.owner == '' ? '' : val.layer.feature.properties.owner + '; ' ;
+		var info = tipOwner + val.layer.feature.properties.materials;
+		return '<a href="#">'+ text + ' <span class="tip-info">' + info + '</span>' +'</a>';
+	},
+	
+	filterData: function(text, records) {
+			var jsons = fuse.search(text),
+				ret = {}, key;
+			
+			for(var i in jsons) {
+				key = jsons[i].properties.address;
+				ret[ key ]= records[key];
+			}
+
+			console.log(jsons,ret);
+			return ret;
+		},
     marker: {
         icon: false,
         circle: false
@@ -459,7 +475,7 @@ mymap.on('click', function () {
 
 });
 
-document.getElementById("searchtext9").addEventListener('focus', function () {
+document.getElementById("searchtext28").addEventListener('focus', function () {
     closeSidebar();
 });
 

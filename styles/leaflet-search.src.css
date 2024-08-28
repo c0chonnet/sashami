@@ -99,10 +99,10 @@
 	float:left;
 	list-style: none;
 	padding: 2px;
-	min-width:200px;
+	width:250px;
 	max-height:300px;
 	box-shadow: none;
-	background-color: transparent;
+	background-color: white;
 	z-index:1100;
 	overflow-y:auto;
 	overflow-x:hidden;
@@ -110,21 +110,41 @@
 	border-radius:4px;
 	opacity: 96%;
 	font-weight:bold;
+	scrollbar-color: transparent transparent;
+	white-space:nowrap;
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+}
+
+.search-tooltip:hover, .search-tooltip:active {
+	scrollbar-color: rgba(221, 207, 195, 0.7) rgba(255, 255, 255, 0.7);
 }
 
 .leaflet-control-search .search-tip {
 	margin:3px;
 	padding:5px;
-	display:block;
 	color:black;
 	background: white;
 	border-radius:.25em;
 	text-decoration:none;	
-	white-space:nowrap;
 	vertical-align:center;
 	font-weight:normal;
 	z-index:1100;
+	display:block;
+	overflow: hidden;          
+    white-space: nowrap;        
+    text-overflow: ellipsis;    
+    width: calc(100% - 10px);  
+
 }
+
+.tip-info {
+
+	    font-size:0.98em;
+		font-style: italic;
+		color:#9f978f;
+		
+}
+
 .leaflet-control-search .search-button:hover {
 	background-color: #e7d7c7;
 }
@@ -155,6 +175,12 @@
 	min-width:180px;
 }
 
+.leaflet-control-search .search-tooltip,
+.leaflet-control-search .search-alert
+{
+	max-width:200px;
+	max-height:200px;
+}
 
 }
 
