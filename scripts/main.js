@@ -81,7 +81,11 @@ fetch('/wp-content/plugins/sashami/config.json') //restricted on Mapbox level
     const tileUrl = data.mapbox.tileurl;
 
     L.tileLayer(tileUrl, {
-        attribution: 'Tiles by Mapbox 🎨sashami 💻vaenaton'
+        attribution: `© <a href="https://www.mapbox.com/about/maps/" target="_blank"> Mapbox </a> 
+		© <a href="http://www.openstreetmap.org/copyright" target="_blank"> OpenStreetMap </a> | 
+		<a href="https://labs.mapbox.com/contribute/" target="_blank"> <strong>Improve this map</strong> </a>
+		🎨 <a href="https://www.instagram.com/sashami_art/" target="_blank"> sashami </a> 
+		💻<a href="https://www.vaenaton.com/about" target="_blank"> vaenaton </a>`
     }).addTo(mymap);
 })
 
@@ -404,8 +408,6 @@ function initializeLayerControl() {
 $(document).ready(function () {
     initializeLayerControl();
 });
-
-$('.leaflet-control-attribution').hide();
 
 // ---- SEARCH
 

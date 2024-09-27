@@ -37,6 +37,7 @@
 	margin-top: 10px;
 }
 
+
 .leaflet-control-search.search-exp {/*expanded*/
 	background: #fff;
 	background-clip: padding-box;	
@@ -103,7 +104,7 @@
 	max-height:300px;
 	box-shadow: none;
 	background-color: white;
-	z-index:1100;
+	z-index:2000;
 	overflow-y:auto;
 	overflow-x:hidden;
 	cursor: pointer;
@@ -154,6 +155,10 @@
     opacity: 100%;
 }
 
+.leaflet-control-attribution a,  .leaflet-control-attribution a:hover {
+	color:black;
+}
+
 @media screen and (max-device-width: 700px) {
 	
 .leaflet-container .leaflet-control-search {
@@ -170,16 +175,16 @@
 .leaflet-control-search .search-alert
 
 {
-	left:90px;
+	left:80px;
 	padding: 6px;
-	min-width:180px;
+	max-width: 190px;
+	max-height:170px;
 }
 
-.leaflet-control-search .search-tooltip,
-.leaflet-control-search .search-alert
-{
-	max-width:200px;
-	max-height:200px;
+.tip-info {
+
+	    font-size:0.9em;
+		
 }
 
 }
